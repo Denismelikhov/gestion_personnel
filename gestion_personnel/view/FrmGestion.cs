@@ -545,6 +545,13 @@ namespace gestion_personnel.view
                 if (personnelSelectionne != null)
                 {
                     Absence nouvelleAbsence = new Absence(personnelSelectionne.idpersonnel, dateDebut, dateFin, motif);
+
+                    if (controller.ExisteAbsenceCreneau(nouvelleAbsence.idpersonnel, dateDebut, dateFin))
+                    {
+                        MessageBox.Show("Une absence existe déjà pour cette période.", "Erreur");
+                        return;
+                    }
+
                     controller.AddAbsence(nouvelleAbsence);
                 }
                 else
