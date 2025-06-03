@@ -29,67 +29,69 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            label1 = new Label();
-            label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            button1 = new Button();
+            buttonConnect = new Button();
+            textPwd = new TextBox();
+            textLogin = new TextBox();
+            labelPwd = new Label();
+            labelLogin = new Label();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(button1);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(textBox1);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(buttonConnect);
+            groupBox1.Controls.Add(textPwd);
+            groupBox1.Controls.Add(textLogin);
+            groupBox1.Controls.Add(labelPwd);
+            groupBox1.Controls.Add(labelLogin);
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(521, 208);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             // 
-            // label1
+            // buttonConnect
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(22, 22);
-            label1.Name = "label1";
-            label1.Size = new Size(59, 30);
-            label1.TabIndex = 0;
-            label1.Text = "login";
+            buttonConnect.Location = new Point(346, 134);
+            buttonConnect.Name = "buttonConnect";
+            buttonConnect.Size = new Size(169, 40);
+            buttonConnect.TabIndex = 4;
+            buttonConnect.Text = "se connecter";
+            buttonConnect.UseVisualStyleBackColor = true;
+            buttonConnect.Click += buttonConnect_Click;
             // 
-            // label2
+            // textPwd
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(22, 69);
-            label2.Name = "label2";
-            label2.Size = new Size(137, 30);
-            label2.TabIndex = 1;
-            label2.Text = "mot de passe";
+            textPwd.Location = new Point(200, 69);
+            textPwd.Name = "textPwd";
+            textPwd.Size = new Size(315, 35);
+            textPwd.TabIndex = 3;
+            textPwd.UseSystemPasswordChar = true;
             // 
-            // textBox1
+            // textLogin
             // 
-            textBox1.Location = new Point(200, 22);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(315, 35);
-            textBox1.TabIndex = 2;
+            textLogin.Location = new Point(200, 22);
+            textLogin.Name = "textLogin";
+            textLogin.Size = new Size(315, 35);
+            textLogin.TabIndex = 2;
             // 
-            // textBox2
+            // labelPwd
             // 
-            textBox2.Location = new Point(200, 69);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(315, 35);
-            textBox2.TabIndex = 3;
+            labelPwd.AutoSize = true;
+            labelPwd.Location = new Point(22, 69);
+            labelPwd.Name = "labelPwd";
+            labelPwd.Size = new Size(137, 30);
+            labelPwd.TabIndex = 1;
+            labelPwd.Text = "mot de passe";
             // 
-            // button1
+            // labelLogin
             // 
-            button1.Location = new Point(346, 134);
-            button1.Name = "button1";
-            button1.Size = new Size(169, 40);
-            button1.TabIndex = 4;
-            button1.Text = "se connecter";
-            button1.UseVisualStyleBackColor = true;
+            labelLogin.AutoSize = true;
+            labelLogin.Location = new Point(22, 22);
+            labelLogin.Name = "labelLogin";
+            labelLogin.Size = new Size(59, 30);
+            labelLogin.TabIndex = 0;
+            labelLogin.Text = "login";
             // 
             // FrmAuthentification
             // 
@@ -107,10 +109,10 @@
         #endregion
 
         private GroupBox groupBox1;
-        private Button button1;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private Label label2;
-        private Label label1;
+        private Button buttonConnect;
+        private TextBox textPwd;
+        private TextBox textLogin;
+        private Label labelPwd;
+        private Label labelLogin;
     }
 }

@@ -6,15 +6,12 @@ using System.Threading.Tasks;
 
 namespace gestion_personnel.model
 {
-    /// <summary>
-    /// Classe métier représentant une absence du personnel.
-    /// </summary>
     public class Absence
     {
         public int idpersonnel { get; }
-        public DateTime datedebut { get; }
-        public DateTime datefin { get; }
-        public int idmotif { get; }
+        public DateTime datedebut { get; set; }
+        public DateTime datefin { get; set; }
+        public Motif motif { get; set; }
 
         /// <summary>
         /// Valorise les propriétés
@@ -22,13 +19,13 @@ namespace gestion_personnel.model
         /// <param name="idpersonnel"></param>
         /// <param name="datedebut"></param>
         /// <param name="datefin"></param>
-        /// <param name="idmotif"></param>
-        public Absence(int idpersonnel, DateTime datedebut, DateTime datefin, int idmotif)
+        /// <param name="motif"></param>
+        public Absence(int idpersonnel, DateTime datedebut, DateTime datefin, Motif motif)
         {
             this.idpersonnel = idpersonnel;
             this.datedebut = datedebut;
             this.datefin = datefin;
-            this.idmotif = idmotif;
+            this.motif = motif;
         }
     }
 }

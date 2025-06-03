@@ -12,11 +12,11 @@ namespace gestion_personnel.model
     public class Personnel
     {
         public int idpersonnel { get; }
-        public string nom { get; }
-        public string prenom { get; }
-        public string tel { get; }
-        public string mail { get; }
-        public int idservice { get; }
+        public string nom { get; set;  }
+        public string prenom { get; set; }
+        public string tel { get; set; }
+        public string mail { get; set; }
+        public Service service { get; set; }
 
         /// <summary>
         /// Valorise les propriétés
@@ -26,15 +26,24 @@ namespace gestion_personnel.model
         /// <param name="prenom"></param>
         /// <param name="tel"></param>
         /// <param name="mail"></param>
-        /// <param name="idservice"></param>
-        public Personnel(int idpersonnel, string nom, string prenom, string tel, string mail, int idservice)
+        /// <param name="service"></param>
+        public Personnel(int idpersonnel, string nom, string prenom, string tel, string mail, Service service)
         {
             this.idpersonnel = idpersonnel;
             this.nom = nom;
             this.prenom = prenom;
             this.tel = tel;
             this.mail = mail;
-            this.idservice = idservice;
+            this.service = service;
+        }
+
+        public Personnel(string nom, string prenom, string tel, string mail, Service service)
+        {
+            this.nom = nom;
+            this.prenom = prenom;
+            this.tel = tel;
+            this.mail = mail;
+            this.service = service;
         }
     }
 }

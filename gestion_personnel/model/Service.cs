@@ -19,10 +19,19 @@ namespace gestion_personnel.model
         /// </summary>
         /// <param name="idservice"></param>
         /// <param name="nom"></param>
-        public Service(int idmotif, string libelle)
+        public Service(int idservice, string nom)
         {
             this.idservice = idservice;
             this.nom = nom;
+        }
+
+        /// <summary>
+        /// Redéfinit ToString() pour afficher le nom du service
+        /// </summary>
+        /// <returns>Nom du service</returns>
+        public override string ToString()
+        {
+            return nom;
         }
     }
 }

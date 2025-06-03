@@ -24,5 +24,13 @@ namespace gestion_personnel.model
             this.idmotif = idmotif;
             this.libelle = libelle;
         }
+
+        // <summary>
+        /// Retourne le libelle du motif
+        /// </summary>
+        public override string ToString()
+        {
+            return libelle;
+        }
     }
 }

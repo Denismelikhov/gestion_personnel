@@ -28,387 +28,412 @@
         /// </summary>
         private void InitializeComponent()
         {
-            groupBox1 = new GroupBox();
-            dataGridView1 = new DataGridView();
-            groupBox2 = new GroupBox();
-            comboBox1 = new ComboBox();
-            button9 = new Button();
-            button8 = new Button();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
-            groupBox3 = new GroupBox();
-            comboBox2 = new ComboBox();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            textBox5 = new TextBox();
-            textBox7 = new TextBox();
-            button10 = new Button();
-            button11 = new Button();
-            button7 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            groupBox2.SuspendLayout();
-            groupBox3.SuspendLayout();
+            groupBoxAffichage = new GroupBox();
+            dgvTableau = new DataGridView();
+            groupBoxPersonnel = new GroupBox();
+            comboBoxService = new ComboBox();
+            buttonAnnulerP = new Button();
+            buttonEnregistrerP = new Button();
+            textBoxMail = new TextBox();
+            textBoxTel = new TextBox();
+            textBoxPrenom = new TextBox();
+            textBoxNom = new TextBox();
+            labelService = new Label();
+            labelMail = new Label();
+            labelTel = new Label();
+            labelPrenom = new Label();
+            labelNom = new Label();
+            buttonModifierP = new Button();
+            buttonSupprimerP = new Button();
+            buttonAjouterP = new Button();
+            buttonAfficherP = new Button();
+            groupBoxAbsences = new GroupBox();
+            comboBoxMotif = new ComboBox();
+            labelMotif = new Label();
+            labelDateFin = new Label();
+            labelDateDebut = new Label();
+            textBoxDateDebut = new TextBox();
+            textBoxDateFin = new TextBox();
+            buttonAnnulerA = new Button();
+            buttonEnregistrerA = new Button();
+            buttonAfficherA = new Button();
+            buttonModifierA = new Button();
+            buttonSupprimerA = new Button();
+            buttonAjouterA = new Button();
+            groupBoxAffichage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTableau).BeginInit();
+            groupBoxPersonnel.SuspendLayout();
+            groupBoxAbsences.SuspendLayout();
             SuspendLayout();
             // 
-            // groupBox1
+            // groupBoxAffichage
             // 
-            groupBox1.Controls.Add(dataGridView1);
-            groupBox1.Location = new Point(12, 12);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1322, 482);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Personnel";
+            groupBoxAffichage.Controls.Add(dgvTableau);
+            groupBoxAffichage.Location = new Point(12, 12);
+            groupBoxAffichage.Name = "groupBoxAffichage";
+            groupBoxAffichage.Size = new Size(1322, 482);
+            groupBoxAffichage.TabIndex = 0;
+            groupBoxAffichage.TabStop = false;
+            groupBoxAffichage.Text = "Personnel";
             // 
-            // dataGridView1
+            // dgvTableau
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(6, 34);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 72;
-            dataGridView1.Size = new Size(1310, 442);
-            dataGridView1.TabIndex = 0;
+            dgvTableau.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTableau.Location = new Point(6, 34);
+            dgvTableau.Name = "dgvTableau";
+            dgvTableau.RowHeadersWidth = 72;
+            dgvTableau.Size = new Size(1310, 442);
+            dgvTableau.TabIndex = 0;
             // 
-            // groupBox2
+            // groupBoxPersonnel
             // 
-            groupBox2.Controls.Add(comboBox1);
-            groupBox2.Controls.Add(button9);
-            groupBox2.Controls.Add(button8);
-            groupBox2.Controls.Add(textBox4);
-            groupBox2.Controls.Add(textBox3);
-            groupBox2.Controls.Add(textBox2);
-            groupBox2.Controls.Add(textBox1);
-            groupBox2.Controls.Add(label5);
-            groupBox2.Controls.Add(label4);
-            groupBox2.Controls.Add(label3);
-            groupBox2.Controls.Add(label2);
-            groupBox2.Controls.Add(label1);
-            groupBox2.Controls.Add(button3);
-            groupBox2.Controls.Add(button2);
-            groupBox2.Controls.Add(button1);
-            groupBox2.Location = new Point(18, 500);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(655, 511);
-            groupBox2.TabIndex = 1;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Personnel";
+            groupBoxPersonnel.Controls.Add(comboBoxService);
+            groupBoxPersonnel.Controls.Add(buttonAnnulerP);
+            groupBoxPersonnel.Controls.Add(buttonEnregistrerP);
+            groupBoxPersonnel.Controls.Add(textBoxMail);
+            groupBoxPersonnel.Controls.Add(textBoxTel);
+            groupBoxPersonnel.Controls.Add(textBoxPrenom);
+            groupBoxPersonnel.Controls.Add(textBoxNom);
+            groupBoxPersonnel.Controls.Add(labelService);
+            groupBoxPersonnel.Controls.Add(labelMail);
+            groupBoxPersonnel.Controls.Add(labelTel);
+            groupBoxPersonnel.Controls.Add(labelPrenom);
+            groupBoxPersonnel.Controls.Add(labelNom);
+            groupBoxPersonnel.Controls.Add(buttonModifierP);
+            groupBoxPersonnel.Controls.Add(buttonSupprimerP);
+            groupBoxPersonnel.Controls.Add(buttonAjouterP);
+            groupBoxPersonnel.Location = new Point(18, 500);
+            groupBoxPersonnel.Name = "groupBoxPersonnel";
+            groupBoxPersonnel.Size = new Size(655, 511);
+            groupBoxPersonnel.TabIndex = 1;
+            groupBoxPersonnel.TabStop = false;
+            groupBoxPersonnel.Text = "Personnel";
             // 
-            // comboBox1
+            // comboBoxService
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(223, 327);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(426, 38);
-            comboBox1.TabIndex = 14;
+            comboBoxService.FormattingEnabled = true;
+            comboBoxService.Location = new Point(223, 327);
+            comboBoxService.Name = "comboBoxService";
+            comboBoxService.Size = new Size(426, 38);
+            comboBoxService.TabIndex = 14;
             // 
-            // button9
+            // buttonAnnulerP
             // 
-            button9.Location = new Point(439, 465);
-            button9.Name = "button9";
-            button9.Size = new Size(210, 40);
-            button9.TabIndex = 13;
-            button9.Text = "Annuler";
-            button9.UseVisualStyleBackColor = true;
+            buttonAnnulerP.Location = new Point(439, 465);
+            buttonAnnulerP.Name = "buttonAnnulerP";
+            buttonAnnulerP.Size = new Size(210, 40);
+            buttonAnnulerP.TabIndex = 13;
+            buttonAnnulerP.Text = "Annuler";
+            buttonAnnulerP.UseVisualStyleBackColor = true;
+            buttonAnnulerP.Click += buttonAnnulerP_Click;
             // 
-            // button8
+            // buttonEnregistrerP
             // 
-            button8.Location = new Point(223, 465);
-            button8.Name = "button8";
-            button8.Size = new Size(210, 40);
-            button8.TabIndex = 12;
-            button8.Text = "Enregistrer";
-            button8.UseVisualStyleBackColor = true;
+            buttonEnregistrerP.Location = new Point(223, 465);
+            buttonEnregistrerP.Name = "buttonEnregistrerP";
+            buttonEnregistrerP.Size = new Size(210, 40);
+            buttonEnregistrerP.TabIndex = 12;
+            buttonEnregistrerP.Text = "Enregistrer";
+            buttonEnregistrerP.UseVisualStyleBackColor = true;
+            buttonEnregistrerP.Click += buttonEnregistrerP_Click;
             // 
-            // textBox4
+            // textBoxMail
             // 
-            textBox4.Location = new Point(223, 276);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(426, 35);
-            textBox4.TabIndex = 11;
+            textBoxMail.Location = new Point(223, 276);
+            textBoxMail.Name = "textBoxMail";
+            textBoxMail.Size = new Size(426, 35);
+            textBoxMail.TabIndex = 11;
             // 
-            // textBox3
+            // textBoxTel
             // 
-            textBox3.Location = new Point(223, 226);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(426, 35);
-            textBox3.TabIndex = 10;
+            textBoxTel.Location = new Point(223, 226);
+            textBoxTel.Name = "textBoxTel";
+            textBoxTel.Size = new Size(426, 35);
+            textBoxTel.TabIndex = 10;
             // 
-            // textBox2
+            // textBoxPrenom
             // 
-            textBox2.Location = new Point(223, 174);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(426, 35);
-            textBox2.TabIndex = 9;
+            textBoxPrenom.Location = new Point(223, 174);
+            textBoxPrenom.Name = "textBoxPrenom";
+            textBoxPrenom.Size = new Size(426, 35);
+            textBoxPrenom.TabIndex = 9;
             // 
-            // textBox1
+            // textBoxNom
             // 
-            textBox1.Location = new Point(223, 126);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(426, 35);
-            textBox1.TabIndex = 8;
+            textBoxNom.Location = new Point(223, 126);
+            textBoxNom.Name = "textBoxNom";
+            textBoxNom.Size = new Size(426, 35);
+            textBoxNom.TabIndex = 8;
             // 
-            // label5
+            // labelService
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(10, 327);
-            label5.Name = "label5";
-            label5.Size = new Size(76, 30);
-            label5.TabIndex = 7;
-            label5.Text = "service";
+            labelService.AutoSize = true;
+            labelService.Location = new Point(10, 327);
+            labelService.Name = "labelService";
+            labelService.Size = new Size(76, 30);
+            labelService.TabIndex = 7;
+            labelService.Text = "service";
             // 
-            // label4
+            // labelMail
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(10, 276);
-            label4.Name = "label4";
-            label4.Size = new Size(52, 30);
-            label4.TabIndex = 6;
-            label4.Text = "mail";
+            labelMail.AutoSize = true;
+            labelMail.Location = new Point(10, 276);
+            labelMail.Name = "labelMail";
+            labelMail.Size = new Size(52, 30);
+            labelMail.TabIndex = 6;
+            labelMail.Text = "mail";
             // 
-            // label3
+            // labelTel
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(10, 226);
-            label3.Name = "label3";
-            label3.Size = new Size(36, 30);
-            label3.TabIndex = 5;
-            label3.Text = "tel";
+            labelTel.AutoSize = true;
+            labelTel.Location = new Point(10, 226);
+            labelTel.Name = "labelTel";
+            labelTel.Size = new Size(36, 30);
+            labelTel.TabIndex = 5;
+            labelTel.Text = "tel";
             // 
-            // label2
+            // labelPrenom
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(10, 174);
-            label2.Name = "label2";
-            label2.Size = new Size(85, 30);
-            label2.TabIndex = 4;
-            label2.Text = "prenom";
+            labelPrenom.AutoSize = true;
+            labelPrenom.Location = new Point(10, 174);
+            labelPrenom.Name = "labelPrenom";
+            labelPrenom.Size = new Size(85, 30);
+            labelPrenom.TabIndex = 4;
+            labelPrenom.Text = "prenom";
             // 
-            // label1
+            // labelNom
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(10, 126);
-            label1.Name = "label1";
-            label1.Size = new Size(55, 30);
-            label1.TabIndex = 3;
-            label1.Text = "nom";
+            labelNom.AutoSize = true;
+            labelNom.Location = new Point(10, 126);
+            labelNom.Name = "labelNom";
+            labelNom.Size = new Size(55, 30);
+            labelNom.TabIndex = 3;
+            labelNom.Text = "nom";
             // 
-            // button3
+            // buttonModifierP
             // 
-            button3.Location = new Point(439, 67);
-            button3.Name = "button3";
-            button3.Size = new Size(210, 40);
-            button3.TabIndex = 2;
-            button3.Text = "Modifier";
-            button3.UseVisualStyleBackColor = true;
+            buttonModifierP.Location = new Point(439, 67);
+            buttonModifierP.Name = "buttonModifierP";
+            buttonModifierP.Size = new Size(210, 40);
+            buttonModifierP.TabIndex = 2;
+            buttonModifierP.Text = "Modifier";
+            buttonModifierP.UseVisualStyleBackColor = true;
+            buttonModifierP.Click += buttonModifierP_Click;
             // 
-            // button2
+            // buttonSupprimerP
             // 
-            button2.Location = new Point(223, 67);
-            button2.Name = "button2";
-            button2.Size = new Size(210, 40);
-            button2.TabIndex = 1;
-            button2.Text = "Supprimer";
-            button2.UseVisualStyleBackColor = true;
+            buttonSupprimerP.Location = new Point(223, 67);
+            buttonSupprimerP.Name = "buttonSupprimerP";
+            buttonSupprimerP.Size = new Size(210, 40);
+            buttonSupprimerP.TabIndex = 1;
+            buttonSupprimerP.Text = "Supprimer";
+            buttonSupprimerP.UseVisualStyleBackColor = true;
+            buttonSupprimerP.Click += buttonSupprimerP_Click;
             // 
-            // button1
+            // buttonAjouterP
             // 
-            button1.Location = new Point(7, 67);
-            button1.Name = "button1";
-            button1.Size = new Size(210, 40);
-            button1.TabIndex = 0;
-            button1.Text = "Ajouter";
-            button1.UseVisualStyleBackColor = true;
+            buttonAjouterP.Location = new Point(7, 67);
+            buttonAjouterP.Name = "buttonAjouterP";
+            buttonAjouterP.Size = new Size(210, 40);
+            buttonAjouterP.TabIndex = 0;
+            buttonAjouterP.Text = "Ajouter";
+            buttonAjouterP.UseVisualStyleBackColor = true;
+            buttonAjouterP.Click += buttonAjouterP_Click;
             // 
-            // groupBox3
+            // buttonAfficherP
             // 
-            groupBox3.Controls.Add(comboBox2);
-            groupBox3.Controls.Add(label6);
-            groupBox3.Controls.Add(label7);
-            groupBox3.Controls.Add(label8);
-            groupBox3.Controls.Add(textBox5);
-            groupBox3.Controls.Add(textBox7);
-            groupBox3.Controls.Add(button10);
-            groupBox3.Controls.Add(button11);
-            groupBox3.Controls.Add(button7);
-            groupBox3.Controls.Add(button4);
-            groupBox3.Controls.Add(button5);
-            groupBox3.Controls.Add(button6);
-            groupBox3.Location = new Point(680, 500);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(655, 511);
-            groupBox3.TabIndex = 2;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "Absences";
+            buttonAfficherP.Location = new Point(225, 21);
+            buttonAfficherP.Name = "buttonAfficherP";
+            buttonAfficherP.Size = new Size(210, 40);
+            buttonAfficherP.TabIndex = 18;
+            buttonAfficherP.Text = "Retour";
+            buttonAfficherP.UseVisualStyleBackColor = true;
+            buttonAfficherP.Click += buttonAfficherP_Click;
             // 
-            // comboBox2
+            // groupBoxAbsences
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(222, 223);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(426, 38);
-            comboBox2.TabIndex = 15;
+            groupBoxAbsences.Controls.Add(buttonAfficherP);
+            groupBoxAbsences.Controls.Add(comboBoxMotif);
+            groupBoxAbsences.Controls.Add(labelMotif);
+            groupBoxAbsences.Controls.Add(labelDateFin);
+            groupBoxAbsences.Controls.Add(labelDateDebut);
+            groupBoxAbsences.Controls.Add(textBoxDateDebut);
+            groupBoxAbsences.Controls.Add(textBoxDateFin);
+            groupBoxAbsences.Controls.Add(buttonAnnulerA);
+            groupBoxAbsences.Controls.Add(buttonEnregistrerA);
+            groupBoxAbsences.Controls.Add(buttonAfficherA);
+            groupBoxAbsences.Controls.Add(buttonModifierA);
+            groupBoxAbsences.Controls.Add(buttonSupprimerA);
+            groupBoxAbsences.Controls.Add(buttonAjouterA);
+            groupBoxAbsences.Location = new Point(680, 500);
+            groupBoxAbsences.Name = "groupBoxAbsences";
+            groupBoxAbsences.Size = new Size(655, 511);
+            groupBoxAbsences.TabIndex = 2;
+            groupBoxAbsences.TabStop = false;
+            groupBoxAbsences.Text = "Absences";
             // 
-            // label6
+            // comboBoxMotif
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(6, 226);
-            label6.Name = "label6";
-            label6.Size = new Size(62, 30);
-            label6.TabIndex = 17;
-            label6.Text = "motif";
+            comboBoxMotif.FormattingEnabled = true;
+            comboBoxMotif.Location = new Point(222, 223);
+            comboBoxMotif.Name = "comboBoxMotif";
+            comboBoxMotif.Size = new Size(426, 38);
+            comboBoxMotif.TabIndex = 15;
             // 
-            // label7
+            // labelMotif
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(6, 174);
-            label7.Name = "label7";
-            label7.Size = new Size(84, 30);
-            label7.TabIndex = 16;
-            label7.Text = "date fin";
+            labelMotif.AutoSize = true;
+            labelMotif.Location = new Point(6, 226);
+            labelMotif.Name = "labelMotif";
+            labelMotif.Size = new Size(62, 30);
+            labelMotif.TabIndex = 17;
+            labelMotif.Text = "motif";
             // 
-            // label8
+            // labelDateFin
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(6, 126);
-            label8.Name = "label8";
-            label8.Size = new Size(114, 30);
-            label8.TabIndex = 15;
-            label8.Text = "date debut";
+            labelDateFin.AutoSize = true;
+            labelDateFin.Location = new Point(6, 174);
+            labelDateFin.Name = "labelDateFin";
+            labelDateFin.Size = new Size(84, 30);
+            labelDateFin.TabIndex = 16;
+            labelDateFin.Text = "date fin";
             // 
-            // textBox5
+            // labelDateDebut
             // 
-            textBox5.Location = new Point(222, 126);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(426, 35);
-            textBox5.TabIndex = 15;
+            labelDateDebut.AutoSize = true;
+            labelDateDebut.Location = new Point(6, 126);
+            labelDateDebut.Name = "labelDateDebut";
+            labelDateDebut.Size = new Size(114, 30);
+            labelDateDebut.TabIndex = 15;
+            labelDateDebut.Text = "date debut";
             // 
-            // textBox7
+            // textBoxDateDebut
             // 
-            textBox7.Location = new Point(222, 174);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(426, 35);
-            textBox7.TabIndex = 15;
+            textBoxDateDebut.Location = new Point(222, 126);
+            textBoxDateDebut.Name = "textBoxDateDebut";
+            textBoxDateDebut.Size = new Size(426, 35);
+            textBoxDateDebut.TabIndex = 15;
             // 
-            // button10
+            // textBoxDateFin
             // 
-            button10.Location = new Point(438, 465);
-            button10.Name = "button10";
-            button10.Size = new Size(210, 40);
-            button10.TabIndex = 8;
-            button10.Text = "Annuler";
-            button10.UseVisualStyleBackColor = true;
+            textBoxDateFin.Location = new Point(222, 174);
+            textBoxDateFin.Name = "textBoxDateFin";
+            textBoxDateFin.Size = new Size(426, 35);
+            textBoxDateFin.TabIndex = 15;
             // 
-            // button11
+            // buttonAnnulerA
             // 
-            button11.Location = new Point(222, 465);
-            button11.Name = "button11";
-            button11.Size = new Size(210, 40);
-            button11.TabIndex = 7;
-            button11.Text = "Enregistrer";
-            button11.UseVisualStyleBackColor = true;
+            buttonAnnulerA.Location = new Point(438, 465);
+            buttonAnnulerA.Name = "buttonAnnulerA";
+            buttonAnnulerA.Size = new Size(210, 40);
+            buttonAnnulerA.TabIndex = 8;
+            buttonAnnulerA.Text = "Annuler";
+            buttonAnnulerA.UseVisualStyleBackColor = true;
+            buttonAnnulerA.Click += buttonAnnulerA_Click;
             // 
-            // button7
+            // buttonEnregistrerA
             // 
-            button7.Location = new Point(438, 21);
-            button7.Name = "button7";
-            button7.Size = new Size(210, 40);
-            button7.TabIndex = 6;
-            button7.Text = "Afficher";
-            button7.UseVisualStyleBackColor = true;
+            buttonEnregistrerA.Location = new Point(222, 465);
+            buttonEnregistrerA.Name = "buttonEnregistrerA";
+            buttonEnregistrerA.Size = new Size(210, 40);
+            buttonEnregistrerA.TabIndex = 7;
+            buttonEnregistrerA.Text = "Enregistrer";
+            buttonEnregistrerA.UseVisualStyleBackColor = true;
+            buttonEnregistrerA.Click += buttonEnregistrerA_Click;
             // 
-            // button4
+            // buttonAfficherA
             // 
-            button4.Location = new Point(438, 67);
-            button4.Name = "button4";
-            button4.Size = new Size(210, 40);
-            button4.TabIndex = 5;
-            button4.Text = "Modifier";
-            button4.UseVisualStyleBackColor = true;
+            buttonAfficherA.Location = new Point(438, 21);
+            buttonAfficherA.Name = "buttonAfficherA";
+            buttonAfficherA.Size = new Size(210, 40);
+            buttonAfficherA.TabIndex = 6;
+            buttonAfficherA.Text = "Afficher";
+            buttonAfficherA.UseVisualStyleBackColor = true;
+            buttonAfficherA.Click += buttonAfficherA_Click;
             // 
-            // button5
+            // buttonModifierA
             // 
-            button5.Location = new Point(222, 67);
-            button5.Name = "button5";
-            button5.Size = new Size(210, 40);
-            button5.TabIndex = 4;
-            button5.Text = "Supprimer";
-            button5.UseVisualStyleBackColor = true;
+            buttonModifierA.Location = new Point(438, 67);
+            buttonModifierA.Name = "buttonModifierA";
+            buttonModifierA.Size = new Size(210, 40);
+            buttonModifierA.TabIndex = 5;
+            buttonModifierA.Text = "Modifier";
+            buttonModifierA.UseVisualStyleBackColor = true;
+            buttonModifierA.Click += buttonModifierA_Click;
             // 
-            // button6
+            // buttonSupprimerA
             // 
-            button6.Location = new Point(6, 67);
-            button6.Name = "button6";
-            button6.Size = new Size(210, 40);
-            button6.TabIndex = 3;
-            button6.Text = "Ajouter";
-            button6.UseVisualStyleBackColor = true;
+            buttonSupprimerA.Location = new Point(222, 67);
+            buttonSupprimerA.Name = "buttonSupprimerA";
+            buttonSupprimerA.Size = new Size(210, 40);
+            buttonSupprimerA.TabIndex = 4;
+            buttonSupprimerA.Text = "Supprimer";
+            buttonSupprimerA.UseVisualStyleBackColor = true;
+            buttonSupprimerA.Click += buttonSupprimerA_Click;
+            // 
+            // buttonAjouterA
+            // 
+            buttonAjouterA.Location = new Point(6, 67);
+            buttonAjouterA.Name = "buttonAjouterA";
+            buttonAjouterA.Size = new Size(210, 40);
+            buttonAjouterA.TabIndex = 3;
+            buttonAjouterA.Text = "Ajouter";
+            buttonAjouterA.UseVisualStyleBackColor = true;
+            buttonAjouterA.Click += buttonAjouterA_Click;
             // 
             // FrmGestion
             // 
             AutoScaleDimensions = new SizeF(12F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1348, 1023);
-            Controls.Add(groupBox3);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
+            Controls.Add(groupBoxAbsences);
+            Controls.Add(groupBoxPersonnel);
+            Controls.Add(groupBoxAffichage);
             Name = "FrmGestion";
             Text = "Gestion du personnel";
-            groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
+            Load += FrmGestion_Load;
+            groupBoxAffichage.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvTableau).EndInit();
+            groupBoxPersonnel.ResumeLayout(false);
+            groupBoxPersonnel.PerformLayout();
+            groupBoxAbsences.ResumeLayout(false);
+            groupBoxAbsences.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private GroupBox groupBox1;
-        private DataGridView dataGridView1;
-        private GroupBox groupBox2;
-        private GroupBox groupBox3;
-        private Button button3;
-        private Button button2;
-        private Button button1;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private Label label5;
-        private Label label4;
-        private Label label3;
-        private Label label2;
-        private Label label1;
-        private Button button9;
-        private Button button8;
-        private Button button10;
-        private Button button11;
-        private ComboBox comboBox1;
-        private Label label6;
-        private Label label7;
-        private Label label8;
-        private TextBox textBox5;
-        private TextBox textBox7;
-        private ComboBox comboBox2;
+        private GroupBox groupBoxAffichage;
+        private DataGridView dgvTableau;
+        private GroupBox groupBoxPersonnel;
+        private GroupBox groupBoxAbsences;
+        private Button buttonModifierP;
+        private Button buttonSupprimerP;
+        private Button buttonAjouterP;
+        private Button buttonModifierA;
+        private Button buttonSupprimerA;
+        private Button buttonAjouterA;
+        private Button buttonAfficherA;
+        private TextBox textBoxMail;
+        private TextBox textBoxTel;
+        private TextBox textBoxPrenom;
+        private TextBox textBoxNom;
+        private Label labelService;
+        private Label labelMail;
+        private Label labelTel;
+        private Label labelPrenom;
+        private Label labelNom;
+        private Button buttonAnnulerP;
+        private Button buttonEnregistrerP;
+        private Button buttonAnnulerA;
+        private Button buttonEnregistrerA;
+        private ComboBox comboBoxService;
+        private Label labelMotif;
+        private Label labelDateFin;
+        private Label labelDateDebut;
+        private TextBox textBoxDateDebut;
+        private TextBox textBoxDateFin;
+        private ComboBox comboBoxMotif;
+        private Button buttonAfficherP;
     }
 }
