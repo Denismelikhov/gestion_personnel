@@ -2,8 +2,8 @@
   "profiles": {
     "gestion_personnel": {
       "commandName": "Project",
-      "sqlDebugging": true,
-      "nativeDebugging": true
+      "sqlDebugging": false,
+      "nativeDebugging": false
     }
   }
 }
